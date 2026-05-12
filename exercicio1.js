@@ -1,47 +1,56 @@
-// console.log("Hello Word");
+// console.log ("Hello World");
 
-// let nome = "Daniel Felipe Sehnem";
-// console.log(nome)
 
-// const pi = 3.14159265358979
-// console.log(pi)
+// let nome ="João";
+//     console.log(nome);
 
-// let n1 = 1;
-// let n2 = 2;
+// const pi = 3.14;
+//     console.log(pi);
+
+// let n1 =1;
+// let n2 =2;
 
 // console.log(n1 + n2);
 
-// function ola(){
-//     console.log("Olá, " + nome);
-// }
+// function saudacao(){
+//     console.log("Olá meu nome é " + nome);
+// };
+
 
 // function somar(n3,n4){
-//     console.log(n3 + n4);
-// }
+//     console.log(n3 + n4)
 
-// somar(1, 22);
-// ola();
+// };
 
-function somatoria(){
+// saudacao();
+// somar(1,1);
+
+
+function somarNumeros(){
+
     let soma = 0;
     let continuar = true;
 
-    while (continuar){
-        let numero = parseFloat(prompt("Digite um número (ou 0 para sair): "));
+    while(continuar){
+    
+        let numero = parseFloat(prompt("Digite um número (ou digite '0 para encerrar): "));
 
-        
+        // soma = soma + numero;
+      
+
 
         if (isNaN(numero)){
-            alert("Por favor, digite um número existente");
-        }else{
+            alert("Por favor, digite um número válido!");
+        } else {
             soma += numero;
-        }
-        if (numero == 0){
-            continuar = false;
-            return;
+            console.log(soma);
         }
 
-        continuar = confirm("Deseja somar mais um número?????");
+        continuar = confirm("Deseja adicionar mais um número.");
+        
     }
-    alert ("A soma dos numerais é: " + soma);
+
+    alert("A soma dos números é: " + soma);
+    console.log("A soma dos números é: "+ soma);
+
 }

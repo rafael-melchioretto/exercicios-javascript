@@ -1,11 +1,16 @@
-function folha_pagamento(){
-    let nome = prompt("Digite seu nome");
-    let sal_bruto = prompt("Digite seu salário");
-    let sal_liq = (sal_bruto * 0.92);
+function atividade_10(){
 
-    alert("O mês ao fim chegou e você receberá seu salário Sr(a). " + nome);
-    alert("Seu salário bruto é de: R$" + sal_bruto);
-    alert("O INSS descontou R$" + (sal_bruto * 0.08) + " de seu salário");
-    alert("Você receberá R$" + sal_liq );
 
+    let nome_funcionario = prompt("Digite o nome do funcionário ");
+    let salario_bruto = parseFloat(prompt("Digite o salário bruto "));
+    let taxa_desconto = 0.08;
+    let desconto = salario_bruto * taxa_desconto;
+    let salario_liquido = salario_bruto - desconto;
+
+        
+        alert("A taxa de desconto do INSS é de 8%");
+alert("Nome: " + nome_funcionario);
+alert("Salario_bruto: " + salario_bruto);
+alert("Valor do desconto: " + desconto);
+alert("O salario liquido é: " + salario_liquido);
 }

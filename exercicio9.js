@@ -1,12 +1,14 @@
-function ordenacao(){
-    let var1 = Math.ceil(Math.random() * 10);
-    let var2 = Math.ceil(Math.random() * 10);
+function atividade_9(){
 
-    if (var1 > var2){
-       console.log(var1 + " " + var2);
-    }else{
-        console.log(var2 + " " + var1);
-    }
+let numero1 = 5;
+let numero2 = 10;
 
-    alert("Seu números foram ordenados :)")
+alert("Valores antes da ordenação" + numero1 + "e" + numero2);
+
+if( numero1 > numero2){
+alert("Ordenado " + numero1  + "," + numero2);
+
+}else{
+ alert("Ordenado " + numero2  + "," + numero1)
+}
 }

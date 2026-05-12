@@ -1,63 +1,43 @@
-function picole(){
-     let cod = prompt("Digite o código do sabor");
+function atividade_7(){
 
-     let sabor;
-     let preco;
+    let codigo = (prompt)("Digite o código do produto de (a até i)");
 
-    cod = cod.toLowerCase(); 
+    switch(codigo){
+case "a":
+        console.log("Sabor - Chocolate - R$1,50")
+break;
 
-    if (cod === "a"){
-        sabor = "Chocolate";
-        preco = "R$1,50";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "b"){
-        sabor = "Morango";
-        preco = "R$2,50";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "c"){
-        sabor = "Creme";
-        preco = "R$2,50";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "d"){
-        sabor = "Manga";
-        preco = "R$3,20";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "e"){
-        sabor = "Melancia";
-        preco = "R$3,40";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "f"){
-        sabor = "Vanilla Ice";
-        preco = "R$3,00";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "g"){
-        sabor = "Céu Azul";
-        preco = "R$3,60";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "h"){
-        sabor = "Brownie";
-        preco = "R$4,00";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
-    }
-    if (cod === "i"){
-        sabor = "Hawaiano";
-        preco = "R$5,00";
-        alert("Seu sabor é: " + sabor + " e o preço é: " + preco);
-        return;
+case "b":
+        console.log("Sabor - Morango - R$2,50")
+break;
+
+case "c":
+        console.log("Sabor - Creme - R$2,50")
+break;
+
+case "d":
+        console.log("Sabor - Manga - R$3,20")
+break;
+
+case "e":
+        console.log("Sabor - Melancia - R$3,40")
+break;
+
+case "f":
+        console.log("Sabor - Vanilla Ice - R$3,00")
+break;
+
+case "g":
+        console.log("Sabor - Céu Azul - R$3,60")
+break;
+
+case "h":
+        console.log("Sabor - Brownie - R$4,00")
+break;
+
+case "i":
+        console.log("Sabor - Hawaiano - R$5,00")
+break;
+
     }
 }

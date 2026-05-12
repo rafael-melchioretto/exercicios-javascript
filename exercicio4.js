@@ -1,19 +1,24 @@
-function bubble(){
+function atividade_4(){
 
-    let vetor = [];
-    let aux;
+ //var
+    let numero = [];
+//
+    for( let i= 0; i < 4; i++){
+  numero[i] =  Number(prompt("Digite o numero " + i ));
+    }
 
-for(i = 0; i < 4; i++){
-    vetor[i] = parseInt(prompt("Digite um número:"));
-}
-    for(i = 0; i < 4; i++){
-        for (j = 0; j < 3; j++){
-            if (vetor[j] < vetor[j+1]){
-                aux = vetor[j];
-                vetor[j] = vetor[j+1];
-                vetor[j+1] = aux;
+    for(let i =0; i < 4; i++) {
+        for(let j = i + 1; j < 4; j++){
+
+            if(numero[i] < numero[j]){
+
+                let guarda = numero[i];
+                numero[i] = numero[j];
+                numero[j] = guarda;
             }
+
         }
     }
-    alert("Os números em ordem decrescente: " + vetor[0] + " " + vetor[1] + " " + vetor[2] + " " + vetor[3]);
+       
+    alert("Ordem descrecente " + numero);
 }

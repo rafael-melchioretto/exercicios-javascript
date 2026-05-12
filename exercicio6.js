@@ -1,11 +1,13 @@
-function vogal(){
-    let letra = prompt("Digite uma letra");
+function atividade_6(){
 
-    letra = letra.toLowerCase(); 
+ let letra = (prompt("Digite uma letra do alfabeto "));
 
-    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-        console.log("O valor é uma vogal");
-    }else{
-        console.log("O valor é uma consoante");
-    }
+if( letra == "a" || letra == "e" || letra == "i" || letra == "o" || letra == "u"){
+    alert("Está letra é uma vogal");
+    console.log("Está letra é uma vogal");
+
+}else{
+    alert("Está letra é uma consoante");
+    console.log("Está letra é uma consoante");
+}
 }

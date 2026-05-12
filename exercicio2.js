@@ -1,8 +1,7 @@
-function contagem(){
-    let inicial = 10
+function contagem_nasa(){
+    for(let i = 10; i > 0; i--){
+        alert(i);
+    };
 
-    for(i = inicial; i >= 0; i--){
-        alert("contagem: " + i);
-    }
-    alert("Lançamento Realizado");
+    alert("Contagem Finalizada")
 }
